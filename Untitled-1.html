@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form action="https://api.web3forms.com/submit" method="POST" id="myForm" onsubmit="return clearForm()">
+        <input type="hidden" name="access_key" value="ee98c5ab-cc23-420b-8c2f-1d4c49c79149">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" style="width:300px; height:150px;" required></textarea><br><br>
+        <button type="submit"> Submit </button>
+    </form>
+
+    <script>
+        function clearForm() {
+            // Prevent default form submission behavior (optional, if web3forms.com handles it)
+            // event.preventDefault();
+
+            // Reset the form to clear all field values
+            document.getElementById("myForm").reset();
+
+            // Optionally display a success message (replace with your desired message)
+            alert("Your message has been sent successfully!");
+
+            return true; // Allow form submission to proceed
+        }
+    </script>
+
+</body>
+
+</html>
