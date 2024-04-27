@@ -488,7 +488,8 @@ img {
 }
 
 .content h1 {
-  font-size: 45px;
+  font-size: 32px;
+  text-align: center;
   color: #ffe100;
   margin-bottom: 15px;
 }
